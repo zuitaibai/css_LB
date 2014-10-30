@@ -1,0 +1,42 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>按钮型a链接与input按钮的统一显示</title>
+<style type="text/css">
+*html .abtn{height:26px;overflow:hidden;}
+.abtn,.abtn span,.abtn input{box-sizing:content-box;border:0;margin:0;padding:0;display:inline-block;cursor:pointer;text-decoration:none;text-align:center;background:url(s.gif) no-repeat;}
+.abtn span,.abtn input{background-position:100% -26px;font:normal 12px/26px '宋体';height:26px;color:#000;padding:0 6px;overflow:visible;min-width:30px;*vertical-align:top;_width:expression(document.body.clientWidth<30?"30px":"auto");}
+.abtn input{*min-width:42px;_width:expression(document.body.clientWidth<42?"42px":"auto");}/*比正常的min-width大12px*/
+.abtn:hover{background-position:0 -52px;}
+.abtn:hover span,.abtn:hover input{background-position:100% -78px;color:#f00;}
+</style>
+</head>
+
+<body>
+
+<span class="abtn"><input type="submit" value="出库出库出库出库出库出库出库出库出库出库"/></span>&nbsp;&nbsp;&nbsp;&nbsp;
+<!--如果是ie6：<a href="javascript:;" class="abtn"><input type="submit" value="出库出库出库出库出库出库出库出库出库出库"/></a>-->
+
+<br><br>
+
+<span class="abtn"><input type="submit" value="出库"/></span>&nbsp;&nbsp;&nbsp;&nbsp;
+<!--如果是ie6：<a href="javascript:;" class="abtn"><input type="submit" value="出库"/></a>-->
+
+
+<br><br>
+
+<span class="abtn"><input type="button" value="出库"/></span>&nbsp;&nbsp;&nbsp;&nbsp;
+<!--如果是ie6：<a href="javascript:;" class="abtn"><input type="button" value="出库"/></a>-->
+
+
+<br><br>
+
+<a href="" class="abtn"><span>出库</span></a>
+
+<br><br>
+
+<a href="" class="abtn"><span>出库出库出库出库出库出库出库出库出库出库</span></a>
+
+</body>
+</html>
